@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PowerSupply</class>
+ <widget class="QWidget" name="PowerSupply">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1015</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="buttonCheckFlash">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>60</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckFlash</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="flashIntencity">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Flash_Light">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flash Light Intencity, ms</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonConfigure">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>509</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Configure</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonStart">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>509</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusPortInform">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>10</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="startU_DAC">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Start_DAC_U">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start: U, V</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="limitI_DAC">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Start_DAC_I">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Limit max current: I, A</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="stopU_DAC">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>190</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Stop_DAC_U">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>160</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stop: U, V</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Port">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>10</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>StatusPort</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonMasterOn">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MasterOn</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Number_Point">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Num: Points</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="numPoints">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>290</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonStop">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>509</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderU_DAC_start">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="pageStep">
+    <number>5</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderU_DAC_stop">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>2000</number>
+   </property>
+   <property name="pageStep">
+    <number>5</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderLIM_I_DAC">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>2000</number>
+   </property>
+   <property name="singleStep">
+    <number>1</number>
+   </property>
+   <property name="pageStep">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderNumPoints">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>240</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>4095</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="timeEdit">
+   <property name="geometry">
+    <rect>
+     <x>868</x>
+     <y>509</y>
+     <width>118</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderFlash">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>12700</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Plot_SolarCell" native="true">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>351</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>351</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="configurationView">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>90</y>
+     <width>71</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerU_OC">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>91</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_UOC">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>94</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>U_OC</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerI_SC">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>121</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_ISC">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>125</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I_SC</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerFF">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>151</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_UOCetalon">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>217</y>
+     <width>64</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>U_OC_etalon</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerEfficiency">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>181</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_ISCetalon">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>247</y>
+     <width>59</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I_SC_etalon</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerU_OC_etalon">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>211</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_FFetalon">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>275</y>
+     <width>48</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FF_etalon</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerI_SC_etalon">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>241</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_Eff_etalon">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>309</y>
+     <width>58</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Efficiency_e</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerFF_etalon">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>271</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_FF">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>158</y>
+     <width>12</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FF</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerEfficiency_etalon">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>301</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_Efficiency">
+   <property name="geometry">
+    <rect>
+     <x>742</x>
+     <y>188</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Efficiency</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerIntencity">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>331</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_lightIntencity">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>337</y>
+     <width>67</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Light intencity</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_Temperature">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>369</y>
+     <width>62</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>361</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Plot_SolarCellEtalon" native="true">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>270</y>
+     <width>351</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>351</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="viewerPowerLight">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>391</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_PowerLight">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>400</y>
+     <width>66</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Power of light</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerStatusPort">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonResult">
+   <property name="geometry">
+    <rect>
+     <x>279</x>
+     <y>509</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewerReferenceU">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>424</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Value_RefVoltage">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>430</y>
+     <width>89</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reference voltage</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Config">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>490</y>
+     <width>16</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Ok</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Start">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>490</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Stop">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>490</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Result">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>490</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_CheckFlash">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>40</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ADC_UOC">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ADC_I">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>390</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Light_Intensity">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>390</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonMonitor">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monitor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Monitor">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>420</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ON/OFF</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Monitor_U">
+   <property name="geometry">
+    <rect>
+     <x>37</x>
+     <y>370</y>
+     <width>20</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>U, V</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Monitor_I">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>370</y>
+     <width>18</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I, A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status_Monitor_Light">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>370</y>
+     <width>22</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>L, W</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
